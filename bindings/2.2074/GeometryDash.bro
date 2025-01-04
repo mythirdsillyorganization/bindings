@@ -13196,7 +13196,7 @@ class LoadingCircle : cocos2d::CCLayerColor {
     inline void setParentLayer(cocos2d::CCLayer* layer) {
         m_parentLayer = layer;
     }
-    void show() = win 0x6ba20, m1 0x415078, imac 0x4abfb0;
+    void show() = win 0x6ba20, m1 0x415078, imac 0x4abfb0, ios 0x392dd0;
 
     virtual bool init() = win 0x6b940, imac 0x4abee0, m1 0x414fbc, ios 0x392d14;
     virtual void draw() = win 0x6bbc0, imac 0x4ac130, m1 0x415220, ios 0x392f78;
