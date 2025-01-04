@@ -13185,9 +13185,9 @@ class LoadingCircle : cocos2d::CCLayerColor {
     // virtual ~LoadingCircle();
     LoadingCircle() {}
 
-    static LoadingCircle* create() = win 0x6b840, m1 0x414ec0, imac 0x4abd70;
+    static LoadingCircle* create() = win 0x6b840, m1 0x414ec0, imac 0x4abd70, ios 0x392c28;
 
-    void fadeAndRemove() = win 0x6bb20, m1 0x415170, imac 0x4ac0a0;
+    void fadeAndRemove() = win 0x6bb20, m1 0x415170, imac 0x4ac0a0, ios 0x392ec4;
 
     void setFade(bool fade) {
         m_fade = fade;
