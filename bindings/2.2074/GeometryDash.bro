@@ -2021,7 +2021,7 @@ class ChallengeNode : cocos2d::CCNode {
         return nullptr;
     }
 
-    bool init(GJChallengeItem* challengeItem, ChallengesPage* challengesPage, bool isNew) = win 0x86ce0, imac 0x38b860, m1 0x31ad04;
+    bool init(GJChallengeItem* challengeItem, ChallengesPage* challengesPage, bool isNew) = win 0x86ce0, imac 0x38b860, m1 0x31ad04, ios 0x37094;
     void onClaimReward(cocos2d::CCObject* sender) = imac 0x38c470;
     void updateTimeLabel(gd::string);
 
@@ -2048,7 +2048,7 @@ class ChallengesPage : FLAlertLayer, FLAlertLayerProtocol, GJChallengeDelegate, 
     }
 
     void claimItem(ChallengeNode*, GJChallengeItem*, cocos2d::CCPoint) = win 0x869d0, imac 0x38b610, m1 0x31aaec;
-    ChallengeNode* createChallengeNode(int number, bool skipAnimation, float animLength, bool isNew) = win 0x86090, imac 0x38abe0, m1 0x31a168;
+    ChallengeNode* createChallengeNode(int number, bool skipAnimation, float animLength, bool isNew) = win 0x86090, imac 0x38abe0, m1 0x31a168, ios 0x36770;
     TodoReturn exitNodeAtSlot(int, float) = win 0x863c0, imac 0x38b0a0, m1 0x31a5bc;
     void onClose(cocos2d::CCObject* sender);
     TodoReturn tryGetChallenges();
@@ -3035,7 +3035,7 @@ class CustomizeObjectLayer : FLAlertLayer, TextInputDelegate, HSVWidgetDelegate,
     TodoReturn getButtonByTag(int) = win 0xa9520;
     TodoReturn getHSV();
     void highlightSelected(ButtonSprite*) = win 0xa97d0, imac 0x1e6d00;
-    bool init(GameObject*, cocos2d::CCArray*) = win 0xa4d00, imac 0x1e3120, m1 0x19a9d0;
+    bool init(GameObject*, cocos2d::CCArray*) = win 0xa4d00, imac 0x1e3120, m1 0x19a9d0, ios 0x50fa4;
     void onBreakApart(cocos2d::CCObject* sender);
     void onBrowse(cocos2d::CCObject* sender);
     void onClear(cocos2d::CCObject* sender);
@@ -3052,7 +3052,7 @@ class CustomizeObjectLayer : FLAlertLayer, TextInputDelegate, HSVWidgetDelegate,
     void onUpdateCustomColor(cocos2d::CCObject* sender) = win 0xa8ea0, imac 0x1e5b40, m1 0x19d154;
     TodoReturn recreateLayer();
     void sliderChanged(cocos2d::CCObject*);
-    void toggleVisible() = win 0xa8af0, imac 0x1e7220, m1 0x19e668;
+    void toggleVisible() = win 0xa8af0, imac 0x1e7220, m1 0x19e668, ios 0x542c0;
     void updateChannelLabel(int channel) = win inline, imac 0x1e6680, m1 0x19dc40 {
         if (channel > 999) {
             m_selectedColorLabel->setString(GJSpecialColorSelect::textForColorIdx(channel));
@@ -3342,7 +3342,7 @@ class CustomSongWidget : cocos2d::CCNode, MusicDownloadDelegate, FLAlertLayerPro
     void downloadAssetFinished(int, GJAssetType) = win 0xcc3e0, imac 0x608f70, m1 0x53620c;
     void downloadFailed() = imac 0x608e20, m1 0x5360a4;
     void getSongInfoIfUnloaded() = win 0xc9af0, imac 0x6074c0, m1 0x534978;
-    bool init(SongInfoObject* songInfo, CustomSongDelegate* songDelegate, bool showSongSelect, bool showPlayMusic, bool showDownload, bool isRobtopSong, bool unkBool, bool isMusicLibrary, int unk) = win 0xc7700, m1 0x530b8c, imac 0x603240;
+    bool init(SongInfoObject* songInfo, CustomSongDelegate* songDelegate, bool showSongSelect, bool showPlayMusic, bool showDownload, bool isRobtopSong, bool unkBool, bool isMusicLibrary, int unk) = win 0xc7700, m1 0x530b8c, imac 0x603240, ios 0xfca04;
     void onCancelDownload(cocos2d::CCObject* sender) = imac 0x5cb850;
     void onDelete(cocos2d::CCObject* sender) = win 0xc9040, m1 0x531eb8;
     void onDownload(cocos2d::CCObject* sender) = win 0xc9cd0, imac 0x6043b0, m1 0x531c24, ios 0xfd9c0;
