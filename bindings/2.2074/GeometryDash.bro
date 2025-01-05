@@ -7189,7 +7189,7 @@ class GameStatsManager : cocos2d::CCNode {
     bool hasCompletedDailyLevel(int) = win 0x1dfd10;
     bool hasCompletedDemonLevel(GJGameLevel*);
     bool hasCompletedGauntletLevel(int) = win 0x1db1a0, m1 0x60f64, imac 0x6d3b0;
-    bool hasCompletedLevel(GJGameLevel* level) = win inline, imac 0x6d280, m1 0x60e04 {
+    bool hasCompletedLevel(GJGameLevel* level) = win inline, imac 0x6d280, m1 0x60e04, ios 0x3334f4 { // most likely is incorrect
         return m_completedLevels->objectForKey(this->getLevelKey(level)) != nullptr;
     }
     bool hasCompletedMainLevel(int levelID) = win inline, m1 0x60d6c, imac 0x6d200, ios 0x330a74 {
