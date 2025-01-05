@@ -5627,12 +5627,12 @@ class GameLevelManager : cocos2d::CCNode {
     char const* getPostCommentKey(int);
     const char * getRateStarsKey(int key);
     char const* getReportKey(int);
-    GJGameLevel* getSavedDailyLevel(int) = win 0x146ba0, m1 0x47d344, imac 0x521300;
+    GJGameLevel* getSavedDailyLevel(int) = win 0x146ba0, m1 0x47d344, imac 0x521300, ios 0x9c64c;
     GJGameLevel* getSavedDailyLevelFromLevelID(int) = imac 0x521600, m1 0x47d650;
     GJMapPack* getSavedGauntlet(int);
     GJGameLevel* getSavedGauntletLevel(int);
     GJGameLevel* getSavedLevel(GJGameLevel*);
-    GJGameLevel* getSavedLevel(int) = win 0x146ad0, m1 0x47d54c, imac 0x521500;
+    GJGameLevel* getSavedLevel(int) = win 0x146ad0, m1 0x47d54c, imac 0x521500, ios 0x9c74c;
     GJLevelList* getSavedLevelList(int);
     cocos2d::CCArray* getSavedLevelLists(int);
     cocos2d::CCArray* getSavedLevels(bool, int) = win 0x145410, m1 0x47af84, imac 0x51e9f0;
@@ -7189,7 +7189,7 @@ class GameStatsManager : cocos2d::CCNode {
     bool hasCompletedDailyLevel(int) = win 0x1dfd10;
     bool hasCompletedDemonLevel(GJGameLevel*);
     bool hasCompletedGauntletLevel(int) = win 0x1db1a0, m1 0x60f64, imac 0x6d3b0;
-    bool hasCompletedLevel(GJGameLevel* level) = win inline, imac 0x6d280, m1 0x60e04, ios 0x3334f4 { // most likely is incorrect
+    bool hasCompletedLevel(GJGameLevel* level) = win inline, imac 0x6d280, m1 0x60e04, ios 0x330af4 {
         return m_completedLevels->objectForKey(this->getLevelKey(level)) != nullptr;
     }
     bool hasCompletedMainLevel(int levelID) = win inline, m1 0x60d6c, imac 0x6d200, ios 0x330a74 {
