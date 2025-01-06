@@ -1427,7 +1427,7 @@ class cocos2d::CCTexture2D {
 
     // CCTexture2D(cocos2d::CCTexture2D const&);
     ~CCTexture2D() = m1 0x3d5378, ios 0x1305f8;
-    CCTexture2D() = m1 0x3d52b0, ios 0x12fd84;
+    CCTexture2D() = m1 0x3d52b0, ios 0x1794e0;
     unsigned int bitsPerPixelForFormat(cocos2d::CCTexture2DPixelFormat) = imac 0x465950;
     unsigned int bitsPerPixelForFormat() = imac 0x4669e0;
     char const* description() = imac 0x465970, m1 0x3d584c;
