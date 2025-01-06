@@ -1413,7 +1413,7 @@ class cocos2d::CCTexture2D {
     bool initPremultipliedATextureWithImage(cocos2d::CCImage*, unsigned int, unsigned int) = m1 0x3d590c;
     bool initWithData(void const*, cocos2d::CCTexture2DPixelFormat, unsigned int, unsigned int, cocos2d::CCSize const&) = imac 0x465650, m1 0x3d557c;
     bool initWithETCFile(char const*) = imac 0x466730, m1 0x3d65b4;
-    bool initWithImage(cocos2d::CCImage*);
+    bool initWithImage(cocos2d::CCImage*) = ios 0x130a5c; //should be
     bool initWithPVRFile(char const*) = imac 0x466650, m1 0x3d64dc;
     bool initWithString(char const*, char const*, float) = imac 0x4662a0, m1 0x3d6128;
     bool initWithString(char const*, char const*, float, cocos2d::CCSize const&, cocos2d::CCTextAlignment, cocos2d::CCVerticalTextAlignment) = imac 0x466300, m1 0x3d6198;
@@ -1427,7 +1427,7 @@ class cocos2d::CCTexture2D {
 
     // CCTexture2D(cocos2d::CCTexture2D const&);
     ~CCTexture2D() = m1 0x3d5378, ios 0x1305f8;
-    CCTexture2D() = m1 0x3d52b0, ios 0x1305f8; //idrk but ima put this here for now
+    CCTexture2D() = m1 0x3d52b0, ios 0x1305f8; //idrk so ima put ~ here for now
     unsigned int bitsPerPixelForFormat(cocos2d::CCTexture2DPixelFormat) = imac 0x465950;
     unsigned int bitsPerPixelForFormat() = imac 0x4669e0;
     char const* description() = imac 0x465970, m1 0x3d584c;
