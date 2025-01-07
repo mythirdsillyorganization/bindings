@@ -10193,7 +10193,7 @@ class GJRewardDelegate {
 class GJRewardItem : cocos2d::CCObject {
     // virtual ~GJRewardItem();
 
-    static GJRewardItem* create() = win 0x1f0980, imac 0x8ea60, m1 0x821c4;
+    static GJRewardItem* create() = win 0x1f0980, imac 0x8ea60, m1 0x821c4, ios 0x33feac;
     static GJRewardItem* create(int chestID, int timeRemaining, gd::string) = win 0x1f0cc0;
     static GJRewardItem* createSpecial(GJRewardType, int, int, SpecialRewardItem, int, SpecialRewardItem, int, int, int) = win 0x1f0ad0, imac 0x774e0, m1 0x6add0;
     static GJRewardItem* createWithCoder(DS_Dictionary* dict) = win inline, imac 0x8ed80, m1 0x824d0 {
@@ -10302,7 +10302,7 @@ class GJRewardItem : cocos2d::CCObject {
 
 [[link(android)]]
 class GJRewardObject : cocos2d::CCObject {
-    static GJRewardObject* create(SpecialRewardItem, int, int) = win 0x1f0880, imac 0x71c80, m1 0x656b0;
+    static GJRewardObject* create(SpecialRewardItem, int, int) = win 0x1f0880, imac 0x71c80, m1 0x656b0, ios 0x33315c;
     // virtual ~GJRewardObject();
 
     static GJRewardObject* create() = win inline, m1 0x81edc {
@@ -13219,7 +13219,7 @@ class LoadingCircleSprite : cocos2d::CCSprite {
     /// @param spinSpeed A speed modifier, higher is faster and lower is slower
     static LoadingCircleSprite* create(float spinSpeed) = win 0x6bc30, imac 0x4ac190, ios 0x392fc0;
 
-    TodoReturn fadeInCircle(bool, float, float);
+    cocos2d::CCAction* fadeInCircle(bool, float, float) = win 0x6bd30, imac 0x4ac330, m1 0x4153e4, ios 0x3930ec;
     void hideCircle() = win inline, m1 0x415470 {
         this->stopActionByTag(0);
         this->setOpacity(0);
@@ -16106,7 +16106,7 @@ class SecretLayer5 : cocos2d::CCLayer, TextInputDelegate, FLAlertLayerProtocol, 
     gd::string getMessage() = win inline {
         return " ";
     }
-    void handleSecretResponse() = win 0x3de440;
+    void handleSecretResponse() = win 0x3de440, ios 0x79ac4;
     void hideTextInput() = win inline {
         m_textInput->setTouchEnabled(false);
         m_textInput->onClickTrackNode(false);
@@ -16121,13 +16121,13 @@ class SecretLayer5 : cocos2d::CCLayer, TextInputDelegate, FLAlertLayerProtocol, 
         return ret;
     }
     void onBack(cocos2d::CCObject* sender) = win 0x3e0c10;
-    void onSubmit(cocos2d::CCObject* sender) = win 0x3df8c0;
+    void onSubmit(cocos2d::CCObject* sender) = win 0x3df8c0, ios 0x78d64;
     void playWinSFX() = win 0x3df400;
     static cocos2d::CCScene* scene() = win 0x2c02c0;
     void showDialog(int);
     void showFailAnimation() = win 0x3de4a0;
     void showFirstDialog() = win 0x3e04f0;
-    void showSuccessAnimation() = win 0x3dea60;
+    void showSuccessAnimation() = win 0x3dea60, ios 0x79b14;
     void showTextInput() = win 0x3df860;
     void unlockUI() = win 0x3df6a0;
     void updateMessageLabel(gd::string text) = win inline {
