@@ -2211,7 +2211,7 @@ class cocos2d::CCArray {
     // static cocos2d::CCArray* createWithCapacity(unsigned int);
     static cocos2d::CCArray* createWithContentsOfFile(char const*);
     static cocos2d::CCArray* createWithContentsOfFileThreadSafe(char const*);
-    static cocos2d::CCArray* createWithObject(cocos2d::CCObject*);
+    static cocos2d::CCArray* createWithObject(cocos2d::CCObject*) = ios 0x249270;
 
     bool init() = imac 0x7094e0;
     bool initWithArray(cocos2d::CCArray*);
