@@ -5426,21 +5426,27 @@ class FriendRequestDelegate {
 class FriendRequestPopup : FLAlertLayer, UploadActionDelegate, UploadPopupDelegate, FLAlertLayerProtocol {
     // virtual ~FriendRequestPopup();
 
-    static FriendRequestPopup* create(GJFriendRequest*);
-
-    void blockUser();
-    bool init(GJFriendRequest*) = imac 0x2916b0;
-    void loadFromGJFriendRequest(GJFriendRequest*);
-    void onAccept(cocos2d::CCObject* sender);
-    void onBlock(cocos2d::CCObject* sender);
-    void onClose(cocos2d::CCObject* sender);
-    void onRemove(cocos2d::CCObject* sender);
+    static FriendRequestPopup* create(GJFriendRequest*) = win 0x28e370;
 
     virtual void keyBackClicked() = win 0x28f950, m1 0x23ade4, imac 0x292af0, ios 0x2d9a8c;
     virtual void uploadActionFinished(int, int) = win 0x28f960, imac 0x292be0, m1 0x23aec0, ios 0x2d9a98;
     virtual void uploadActionFailed(int, int) = win 0x28fb10, imac 0x292dc0, m1 0x23b0c0, ios 0x2d9bc8;
     virtual void onClosePopup(UploadActionPopup*) = win 0x28fbd0, imac 0x292f10, m1 0x23b228, ios 0x2d9c60;
     virtual void FLAlert_Clicked(FLAlertLayer*, bool) = win 0x28fc30, imac 0x293080, m1 0x23b3a4, ios 0x2d9cd8;
+
+    void blockUser();
+    bool init(GJFriendRequest*) = win 0x28e4b0, imac 0x2916b0, m1 0x239a00, ios 0x2d889c;
+    void loadFromGJFriendRequest(GJFriendRequest*) = m1 0x23a080, imac 0x291cf0;
+    void onAccept(cocos2d::CCObject* sender) = m1 0x23a914, imac 0x292650;
+    void onBlock(cocos2d::CCObject* sender) = m1 0x23aab0, imac 0x2927f0;
+    void onClose(cocos2d::CCObject* sender) = win 0x28f440, m1 0x23a014, imac 0x291c80;
+    void onRemove(cocos2d::CCObject* sender);
+
+    void* m_unk;
+    GJFriendRequest* m_request;
+    LoadingCircle* m_circle;
+    CCMenuItemSpriteExtra* m_closeBtn;
+    UploadActionPopup* m_popup;
 }
 
 [[link(android)]]
@@ -9851,7 +9857,14 @@ class GJMessageCell : TableViewCell, FLAlertLayerProtocol, UploadPopupDelegate, 
     // virtual ~GJMessageCell();
     GJMessageCell(char const*, float, float);
 
-    void loadFromMessage(GJUserMessage*) = win 0xbc7e0, imac 0x23aa30;
+    virtual bool init() = win 0xbb620, m1 0x1f4e7c, imac 0x2464b0, ios 0x11530c;
+    virtual void draw() = imac 0x2467c0, m1 0x1f5164, ios 0x115538;
+    virtual void FLAlert_Clicked(FLAlertLayer*, bool) = win 0xbd440, imac 0x246890, m1 0x1f5210, ios 0x1155e4;
+    virtual void uploadActionFinished(int, int) = win 0xbd5e0, imac 0x246a20, m1 0x1f5374, ios 0x1156cc;
+    virtual void uploadActionFailed(int, int) = win 0xbd760, m1 0x1f5568, imac 0x246c10, ios 0x1157d0;
+    virtual void onClosePopup(UploadActionPopup*) = imac 0x246d80, m1 0x1f56d0, ios 0x115868;
+
+    void loadFromMessage(GJUserMessage*) = win 0xbc7e0, m1 0x1ea9f8, imac 0x23aa30, ios 0x10d474;
     TodoReturn markAsRead();
     void onDeleteMessage(cocos2d::CCObject* sender);
     void onToggle(cocos2d::CCObject* sender);
@@ -9860,12 +9873,9 @@ class GJMessageCell : TableViewCell, FLAlertLayerProtocol, UploadPopupDelegate, 
     void updateBGColor(int);
     TodoReturn updateToggle();
 
-    virtual bool init() = win 0xbb620, m1 0x1f4e7c, imac 0x2464b0, ios 0x11530c;
-    virtual void draw() = imac 0x2467c0, m1 0x1f5164, ios 0x115538;
-    virtual void FLAlert_Clicked(FLAlertLayer*, bool) = win 0xbd440, imac 0x246890, m1 0x1f5210, ios 0x1155e4;
-    virtual void uploadActionFinished(int, int) = win 0xbd5e0, imac 0x246a20, m1 0x1f5374, ios 0x1156cc;
-    virtual void uploadActionFailed(int, int) = win 0xbd760, m1 0x1f5568, imac 0x246c10, ios 0x1157d0;
-    virtual void onClosePopup(UploadActionPopup*) = imac 0x246d80, m1 0x1f56d0, ios 0x115868;
+    GJUserMessage* m_message;
+    void* m_unk;
+    CCMenuItemToggler* m_toggler;
 }
 
 [[link(android)]]
@@ -15456,7 +15466,7 @@ class ProfilePage : FLAlertLayer, FLAlertLayerProtocol, LevelCommentDelegate, Co
     void onCommentHistory(cocos2d::CCObject* sender) = win 0x3acbc0, imac 0x7a7830, m1 0x6b92c8;
     void onCopyName(cocos2d::CCObject* sender) = win 0x3ac290;
     void onFollow(cocos2d::CCObject* sender) = win 0x3ad450, m1 0x6b6028;
-    void onFriend(cocos2d::CCObject* sender) = win 0x3ace10, imac 0x7a82f0;
+    void onFriend(cocos2d::CCObject* sender) = win 0x3ace10, imac 0x7a82f0, ios 0x19e02c;
     void onFriends(cocos2d::CCObject* sender) = win 0x3aeae0;
     void onInfo(cocos2d::CCObject* sender);
     void onMessages(cocos2d::CCObject* sender) = win 0x3aeab0;
