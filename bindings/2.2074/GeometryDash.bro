@@ -15445,7 +15445,7 @@ class ProfilePage : FLAlertLayer, FLAlertLayerProtocol, LevelCommentDelegate, Co
     static ProfilePage* create(int accountID, bool ownProfile) = win 0x3a7a20, imac 0x7a3080, m1 0x6b5200, ios 0x199e24;
 
     void blockUser();
-    bool init(int accountID, bool ownProfile) = win 0x3a7c00, m1 0x6b5370, imac 0x7a3290;
+    bool init(int accountID, bool ownProfile) = win 0x3a7c00, m1 0x6b5370, imac 0x7a3290, ios 0x199ea8;
     bool isCorrect(char const* key);
     bool isOnWatchlist(int);
     void loadPage(int) = win 0x3aee30;
