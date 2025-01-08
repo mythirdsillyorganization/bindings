@@ -9602,7 +9602,7 @@ class GJGroundLayer : cocos2d::CCLayer {
     TodoReturn fadeInFinished();
     TodoReturn getGroundY();
     TodoReturn hideShadows();
-    bool init(int, int) = win 0x2768f0, imac 0x5d2870, m1 0x506450, ios 0x35a84c;
+    bool init(int, int) = win 0x2768f0, imac 0x5d2870, m1 0x506450, ios 0x2fe60;
     void loadGroundSprites(int, bool) = win 0x276e60;
     void positionGround(float) = imac 0x5d38b0;
     TodoReturn scaleGround(float) = win 0x277310, imac 0x5d3350;
