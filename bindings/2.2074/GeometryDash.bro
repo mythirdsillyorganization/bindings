@@ -12636,7 +12636,7 @@ class LevelListLayer : LevelBrowserLayer, TextInputDelegate, SelectListIconDeleg
     void confirmClone(cocos2d::CCObject*) = win 0x2f36a0, imac 0x34a2e0, m1 0x2decc4;
     void confirmDelete(cocos2d::CCObject*) = win 0x2f3a20;
     void confirmOwnerDelete(cocos2d::CCObject*) = win 0x2f3b50, imac 0x34a470, m1 0x2dee64;
-    bool init(GJLevelList*) = win 0x2eebf0, m1 0x2dd0cc, imac 0x348500;
+    bool init(GJLevelList*) = win 0x2eebf0, m1 0x2dd0cc, imac 0x348500, ios 0x242200;
     void onClaimReward(cocos2d::CCObject* sender) = win 0x2f1650;
     void onDelete();
     void onDescription(cocos2d::CCObject* sender) = imac 0x34a680, m1 0x2df064;
@@ -12652,7 +12652,7 @@ class LevelListLayer : LevelBrowserLayer, TextInputDelegate, SelectListIconDeleg
     void ownerDelete();
     void updateEditMode();
     void updateSideButtons() = win 0x2f3160, imac 0x34a960, m1 0x2df334;
-    void updateStatsArt() = win 0x2f06d0, m1 0x2df3c8, imac 0x34a9f0;
+    void updateStatsArt() = win 0x2f06d0, m1 0x2df3c8, imac 0x34a9f0, ios 0x2442d4;
     void verifyListName();
 
     virtual void onEnter() = win 0x2f0680, m1 0x2e01ec, imac 0x34b870, ios 0x2450b4;
@@ -12740,8 +12740,8 @@ class LevelPage : cocos2d::CCLayer, DialogDelegate {
         return nullptr;
     }
 
-    void addSecretCoin() = win 0x307810, m1 0x39cb1c, imac 0x4215a0;
-    void addSecretDoor() = win 0x307f20, m1 0x39ed88, imac 0x423b10;
+    void addSecretCoin() = win 0x307810, m1 0x39cb1c, imac 0x4215a0, ios 0x3fb304;
+    void addSecretDoor() = win 0x307f20, m1 0x39ed88, imac 0x423b10, ios 0x3fcd1c;
     bool init(GJGameLevel*) = win 0x305070, m1 0x39dc80, imac 0x422900, ios 0x3fbe78;
     void onInfo(cocos2d::CCObject* sender) = win 0x309260;
     void onMoreGames(cocos2d::CCObject* sender);
@@ -12751,7 +12751,7 @@ class LevelPage : cocos2d::CCLayer, DialogDelegate {
     void playCoinEffect() = win 0x307a50, imac 0x423cf0, m1 0x39ef58;
     void playStep2();
     void playStep3() = win 0x309160;
-    void updateDynamicPage(GJGameLevel*) = win 0x305d00, m1 0x39b524, imac 0x420050;
+    void updateDynamicPage(GJGameLevel*) = win 0x305d00, m1 0x39b524, imac 0x420050, 0x3fa3a0;
 
     virtual bool ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) = win 0x309700, imac 0x424bf0, m1 0x39fd40, ios 0x3fdab4;
     virtual void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) = m1 0x39fe48, imac 0x424d10, ios 0x3fdbb0 {}
