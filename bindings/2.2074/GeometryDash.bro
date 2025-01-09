@@ -8812,8 +8812,8 @@ class GJDifficultySprite : cocos2d::CCSprite {
 
     static gd::string getDifficultyFrame(int, GJDifficultyName) = win 0x29d9b0, imac 0x2a3680, m1 0x24a464;
     bool init(int, GJDifficultyName) = imac 0x2a3610, m1 0x24a3cc;
-    void updateDifficultyFrame(int, GJDifficultyName) = win 0x29da90, imac 0x2a37c0, m1 0x24a5b0;
-    void updateFeatureState(GJFeatureState) = win 0x29dbb0, imac 0x2a3940, m1 0x24a728;
+    void updateDifficultyFrame(int, GJDifficultyName) = win 0x29da90, imac 0x2a37c0, m1 0x24a5b0, ios 0x2e5534;
+    void updateFeatureState(GJFeatureState) = win 0x29dbb0, imac 0x2a3940, m1 0x24a728, ios 0x2266ac;
     void updateFeatureStateFromLevel(GJGameLevel*) = m1 0x24a6f0;
 
     GJFeatureState m_featureState;
