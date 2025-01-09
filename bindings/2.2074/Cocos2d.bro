@@ -3318,7 +3318,7 @@ class cocos2d::extension::CCHttpClient : cocos2d::CCObject {
     // CCHttpClient() = imac 0x441fb0, m1 0x3b3ec8;
     static cocos2d::extension::CCHttpClient* getInstance() = imac 0x425520, m1 0x3a04ec;
     static void destroyInstance() = m1 0x3a0550;
-    void send(cocos2d::extension::CCHttpRequest* request) = imac 0x426430, m1 0x3a12c0;
+    void send(cocos2d::extension::CCHttpRequest* request) = imac 0x426430, m1 0x3a12c0, ios 0x241138;
     bool lazyInitThreadSemphore() = imac 0x425880, m1 0x3a0864;
     void dispatchResponseCallbacks(float);
 }
