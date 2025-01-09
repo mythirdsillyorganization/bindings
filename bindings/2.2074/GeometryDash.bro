@@ -220,7 +220,7 @@ class AchievementManager : cocos2d::CCNode {
 
     static AchievementManager* sharedState() = win 0x7da0, imac 0x715690, m1 0x633e04, ios 0xb9e4c;
 
-    gd::string achievementForUnlock(int, UnlockType) = win 0x3a1c0, imac 0x76ef60, m1 0x682554;
+    gd::string achievementForUnlock(int, UnlockType) = win 0x3a1c0, imac 0x76ef60, m1 0x682554, ios 0xeb6d8;
     void addAchievement(gd::string, gd::string, gd::string, gd::string, gd::string, int) = win 0x7ef0;
     void addManualAchievements() = win 0x8410;
     TodoReturn areAchievementsEarned(cocos2d::CCArray*);
@@ -10613,7 +10613,7 @@ class GJSearchObject : cocos2d::CCNode {
     GJSearchObject* getPrevPageObject() = imac 0x54af60;
     char const* getSearchKey(SearchType searchType, gd::string searchQuery, gd::string difficulty, gd::string length, int page, bool star, bool uncompleted, bool featured, int songID, bool original, bool twoPlayer, bool customSong, bool songFilter, bool noStar, bool coins, bool epic, bool legendary, bool mythic, bool onlyCompleted, int demonFilter, int folder, int searchMode) = win 0x171f00;
     bool init(SearchType searchType, gd::string searchQuery, gd::string difficulty, gd::string length, int page, bool star, bool uncompleted, bool featured, int songID, bool original, bool twoPlayer, bool customSong, bool songFilter, bool noStar, bool coins, bool epic, bool legendary, bool mythic, bool onlyCompleted, int demonFilter, int folder, int searchMode);
-    bool isLevelSearchObject() = win 0x1721e0, imac 0x54af80, m1 0x4a3330;
+    bool isLevelSearchObject() = win 0x1721e0, imac 0x54af80, m1 0x4a3330, 0xb4078;
 
     SearchType m_searchType;
     gd::string m_searchQuery;
@@ -11712,7 +11712,7 @@ class ItemInfoPopup : FLAlertLayer {
     static ItemInfoPopup* create(int, UnlockType) = win 0x273e30, imac 0x35b830, m1 0x2eecf8;
     static gd::string nameForUnlockType(int, UnlockType) = win 0x275ef0, imac 0x35f670;
 
-    bool init(int, UnlockType) = win 0x273f20, imac 0x35e340, m1 0x2f14e8;
+    bool init(int, UnlockType) = win 0x273f20, imac 0x35e340, m1 0x2f14e8, ios 0x3083b8;
     bool isUnlockedByDefault(int, UnlockType) = imac 0x35f950, m1 0x2f2a1c;
     void onClose(cocos2d::CCObject* sender);
     void onCredit(cocos2d::CCObject* sender) = win 0x275ec0, imac 0x35f980, m1 0x2f2a48;
@@ -12011,7 +12011,7 @@ class LevelBrowserLayer : cocos2d::CCLayerColor, LevelManagerDelegate, FLAlertLa
     TodoReturn exitLayer(cocos2d::CCObject*);
     cocos2d::CCArray* getItemsMatchingSearch(cocos2d::CCArray*, gd::string, GJSearchObject*) = win 0x2c6b80;
     gd::string getSearchTitle() = win 0x2c39e0;
-    bool init(GJSearchObject*) = win 0x2c0a60, m1 0x3e66c8, imac 0x478340;
+    bool init(GJSearchObject*) = win 0x2c0a60, m1 0x3e66c8, imac 0x478340, ios 0x40c1f8;
     bool isCorrect(char const*) = win 0x2c2370;
     void loadPage(GJSearchObject*) = win 0x2c2540, imac 0x47b5e0, m1 0x3e99f0;
     void onClearSearch(cocos2d::CCObject* sender) = win 0x2c67a0, imac 0x47b560;
@@ -12458,7 +12458,7 @@ class LevelInfoLayer : cocos2d::CCLayer, LevelDownloadDelegate, LevelUpdateDeleg
     void onGarage(cocos2d::CCObject* sender) = win 0x2e55b0, imac 0x2aea50, ios 0x2d2e4;
     void onInfo(cocos2d::CCObject* sender) = win 0x2e8b60, imac 0x2addb0;
     void onLevelInfo(cocos2d::CCObject* sender) = win 0x2ea510;
-    void onLevelLeaderboard(cocos2d::CCObject* sender) = win 0x2e54d0, imac 0x2adde0, m1 0x253d3c;
+    void onLevelLeaderboard(cocos2d::CCObject* sender) = win 0x2e54d0, imac 0x2adde0, m1 0x253d3c, ios 0x2c85c;
     void onLevelOptions(cocos2d::CCObject* sender) = win 0x2ea3c0;
     void onLike(cocos2d::CCObject* sender) = win 0x2e9e60, m1 0x253da8, imac 0x2ade50;
     void onLowDetailMode(cocos2d::CCObject* sender);
@@ -12476,14 +12476,14 @@ class LevelInfoLayer : cocos2d::CCLayer, LevelDownloadDelegate, LevelUpdateDeleg
     void playStep3() = m1 0x256650;
     void playStep4() = win 0x2e8ab0, m1 0x25678c;
     void setupLevelInfo() = win 0x2e65c0, m1 0x252478, imac 0x2ac500;
-    void setupPlatformerStats() = win 0x2e5a80, m1 0x252fc8, imac 0x2ad140;
-    void setupProgressBars() = win 0x2e5eb0, m1 0x25336c, imac 0x2ad480;
+    void setupPlatformerStats() = win 0x2e5a80, m1 0x252fc8, imac 0x2ad140, ios 0x2bc9c;
+    void setupProgressBars() = win 0x2e5eb0, m1 0x25336c, imac 0x2ad480, ios 0x2bff8;
     bool shouldDownloadLevel();
     void showSongWarning() = imac 0x2b0590, m1 0x25646c;
     void showUpdateAlert(UpdateResponse) = win 0x2e7710, imac 0x2b00d0, m1 0x255ffc;
     void tryCloneLevel(cocos2d::CCObject*) = win 0x2e8ba0, imac 0x2ae5b0;
     TodoReturn tryShowAd();
-    void updateLabelValues() = win 0x2ea9d0, imac 0x2af160, m1 0x25517c;
+    void updateLabelValues() = win 0x2ea9d0, imac 0x2af160, m1 0x25517c, ios 0x2d910;
     void updateSideButtons() = win 0x2e9fc0, m1 0x253fd8, imac 0x2ae090;
 
     virtual void keyBackClicked() = win 0x2ebdd0, imac 0x2b1280, m1 0x25718c, ios 0x2f294;
@@ -12539,12 +12539,12 @@ class LevelInfoLayer : cocos2d::CCLayer, LevelDownloadDelegate, LevelUpdateDeleg
 class LevelLeaderboard : FLAlertLayer, LeaderboardManagerDelegate, FLAlertLayerProtocol {
     // virtual ~LevelLeaderboard();
 
-    static LevelLeaderboard* create(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) = win 0x2ebf80, imac 0x3c72e0;
+    static LevelLeaderboard* create(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) = win 0x2ebf80, imac 0x3c72e0, ios 0x24e3b8;
 
     TodoReturn deleteLocalScores();
     TodoReturn getLocalScores();
     TodoReturn getSpriteButton(gd::string, cocos2d::SEL_MenuHandler, cocos2d::CCMenu*, float, cocos2d::CCPoint, int) = imac 0x3c8500, m1 0x351164;
-    bool init(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) = win 0x2ec0c0, m1 0x350244, imac 0x3c7470;
+    bool init(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) = win 0x2ec0c0, m1 0x350244, imac 0x3c7470, ios 0x24e4a8;
     bool isCorrect(char const*);
     void loadScores() = m1 0x3515ec;
     void onChangeMode(cocos2d::CCObject* sender) = win 0x2edd40, m1 0x351344;
