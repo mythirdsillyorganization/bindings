@@ -6261,7 +6261,7 @@ class GameManager : GManager {
     TodoReturn unlockColor(int, UnlockType);
     TodoReturn unlockedPremium();
     void unlockIcon(int, IconType);
-    IconType unlockTypeToIconType(int) = win 0x1796e0, imac 0x364ba0, m1 0x2f7528;
+    IconType unlockTypeToIconType(int) = win 0x1796e0, imac 0x364ba0, m1 0x2f7528, ios 0x312d64;
     void updateCustomFPS() = win 0x187cc0, imac 0x379480;
     TodoReturn updateMusic();
     void verifyAchievementUnlocks() = m1 0x2f93b0;
