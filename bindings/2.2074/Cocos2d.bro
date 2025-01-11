@@ -213,7 +213,7 @@ class cocos2d::CCMotionStreak {
     void setStroke(float);
 
     // CCMotionStreak(cocos2d::CCMotionStreak const&);
-    	CCMotionStreak() = imac inline, m1 0x4b5cf4 {
+    	CCMotionStreak() = imac inline, m1 0x4b5cf4, ios 0x17a068 {
     	m_bFastMode = false;
     	m_bStartingPositionInitialized = false;
     	m_pTexture = nullptr;
@@ -247,7 +247,7 @@ class cocos2d::CCMotionStreak {
     void tintWithColor(cocos2d::_ccColor3B);
     void updateFade(float) = imac 0x55fb10;
 
-    ~CCMotionStreak() = imac 0x55f3b0, m1 0x4b5e2c;
+    ~CCMotionStreak() = imac 0x55f3b0, m1 0x4b5e2c, ios 0x17a104;
 
     virtual void update(float) = imac 0x55fb50, m1 0x4b651c, ios 0x17a624;
     virtual void setPosition(cocos2d::CCPoint const&) = imac 0x55f8b0, m1 0x4b6324, ios 0x17a4f4;
