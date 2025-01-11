@@ -5527,7 +5527,7 @@ class GameLevelManager : cocos2d::CCNode {
     cocos2d::CCArray* createAndGetMapPacks(gd::string);
     cocos2d::CCArray* createAndGetScores(gd::string, GJScoreType);
     GJGameLevel* createNewLevel() = win 0x142800, imac 0x5165d0, m1 0x473a40;
-    GJLevelList* createNewLevelList() = win 0x1432b0, m1 0x474704;
+    GJLevelList* createNewLevelList() = win 0x1432b0, m1 0x474704, ios 0x96a04;
     TodoReturn createPageInfo(int, int, int);
     GJSmartTemplate* createSmartTemplate();
     void dataLoaded(DS_Dictionary*) = win 0x149310, imac 0x525360, m1 0x481004;
@@ -5647,7 +5647,7 @@ class GameLevelManager : cocos2d::CCNode {
     int getSplitIntFromKey(char const*, int);
     TodoReturn getStarLevelsString();
     cocos2d::CCArray* getStoredLevelComments(char const*) = win 0x15b420, imac 0x53b2f0, m1 0x494a28;
-    cocos2d::CCArray* getStoredOnlineLevels(char const*) = win 0x147780, imac 0x5223c0, m1 0x47e2d8;
+    cocos2d::CCArray* getStoredOnlineLevels(char const*) = win 0x147780, imac 0x5223c0, m1 0x47e2d8, ios 0x9d020;
     cocos2d::CCArray* getStoredUserList(UserListType) = imac 0x53f790;
     GJUserMessage* getStoredUserMessage(int);
     GJUserMessage* getStoredUserMessageReply(int);
@@ -9122,7 +9122,7 @@ class GJGameLevel : cocos2d::CCNode {
     // virtual ~GJGameLevel();
     //GJGameLevel() = ios 0xb40a8;
 
-    static GJGameLevel* create() = win 0x169b40, imac 0x5168e0, m1 0x473d34;
+    static GJGameLevel* create() = win 0x169b40, imac 0x5168e0, m1 0x473d34, ios 0x9637c;
     static GJGameLevel* create(cocos2d::CCDictionary*, bool) = win 0x1683e0, m1 0x4760f0, imac 0x519030;
     static gd::string lengthKeyToString(int key) = win 0x16a0d0, imac 0x5457e0, m1 0x49e59c;
 
@@ -9671,13 +9671,13 @@ class GJItemIcon : cocos2d::CCSprite {
 class GJLevelList : cocos2d::CCNode {
     // virtual ~GJLevelList();
 
-    static GJLevelList* create() = win 0x173760, imac 0x517750, m1 0x474a98;
+    static GJLevelList* create() = win 0x173760, imac 0x517750, m1 0x474a98, ios 0x96cac;
     static GJLevelList* create(cocos2d::CCDictionary*) = win 0x172e70, m1 0x478394;
 
     void addLevelToList(GJGameLevel* level) = win 0x173ee0;
     TodoReturn completedLevels() = imac 0x54ca00, m1 0x4a4a48;
-    TodoReturn createWithCoder(DS_Dictionary*);
-    void dataLoaded(DS_Dictionary*) = win 0x174cd0, imac 0x54cef0, m1 0x4a4f68;
+    TodoReturn createWithCoder(DS_Dictionary*) = m1 0x4a4f38, ios 0xb533c;
+    void dataLoaded(DS_Dictionary*) = win 0x174cd0, imac 0x54cef0, m1 0x4a4f68, ios 0xb536c;
     TodoReturn duplicateListLevels(GJLevelList*);
     TodoReturn frameForListDifficulty(int, DifficultyIconType) = imac 0x54d4b0, m1 0x4a54d8;
     cocos2d::CCArray* getListLevelsArray(cocos2d::CCArray*) = win 0x174160;
@@ -13978,7 +13978,7 @@ class MusicDownloadManager : cocos2d::CCNode, PlatformDownloadDelegate {
     void parseSFXLibrary();
     gd::string pathForSFX(int) = win 0x32a230, imac 0x578940, m1 0x4cc334, ios 0x15a508;
     gd::string pathForSFXFolder(int) = win 0x32a0e0, imac 0x578a00, m1 0x4cc418;
-    gd::string pathForSong(int) = win 0x329f00, m1 0x4caf14, imac 0x577270;
+    gd::string pathForSong(int) = win 0x329f00, m1 0x4caf14, imac 0x577270, ios 0x1598e4;
     gd::string pathForSongFolder(int) = win 0x329db0, imac 0x578290, m1 0x4cbe10;
     void ProcessHttpGetRequest(gd::string, gd::string, cocos2d::extension::SEL_HttpResponse, int, int) = imac 0x572e60, m1 0x4c7030;
     callback void ProcessHttpRequest(gd::string, gd::string, gd::string, GJHttpType) = imac 0x572b10, m1 0x4c6cf0;
@@ -14797,7 +14797,7 @@ class PlayerObject : GameObject, AnimatedSpriteDelegate {
     void runNormalRotation() {
         this->runNormalRotation(false, 1.0f);
     }
-    void runNormalRotation(bool, float) = win 0x9999999, imac 0x3ee220, m1 0x36f618;
+    void runNormalRotation(bool, float) = win 0x9999999, imac 0x3ee220, m1 0x36f618, ios 0x21c204;
     void runRotateAction(bool, int) = win 0x3775c0;
     TodoReturn saveToCheckpoint(PlayerCheckpoint*) = imac 0x40a6b0;
     void setSecondColor(cocos2d::ccColor3B const&) = win 0x387610, imac 0x3ec3a0, m1 0x36dd8c, ios 0x21af40;
