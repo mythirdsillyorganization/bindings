@@ -8808,7 +8808,7 @@ class GJDailyLevelDelegate {
 class GJDifficultySprite : cocos2d::CCSprite {
     // virtual ~GJDifficultySprite();
 
-    static GJDifficultySprite* create(int, GJDifficultyName) = win 0x29d8d0, imac 0x2a3530, m1 0x24a2c0;
+    static GJDifficultySprite* create(int, GJDifficultyName) = win 0x29d8d0, imac 0x2a3530, m1 0x24a2c0, ios 0x2e5348;
 
     static gd::string getDifficultyFrame(int, GJDifficultyName) = win 0x29d9b0, imac 0x2a3680, m1 0x24a464;
     bool init(int, GJDifficultyName) = imac 0x2a3610, m1 0x24a3cc;
