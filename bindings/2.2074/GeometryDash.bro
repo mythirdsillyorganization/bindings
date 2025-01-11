@@ -234,7 +234,7 @@ class AchievementManager : cocos2d::CCNode {
     cocos2d::CCArray* getAllAchievementsSorted(bool);
     bool isAchievementAvailable(gd::string);
     bool isAchievementEarned(char const* ach) = win 0x39a70, imac 0x76ec00, m1 0x682198;
-    int limitForAchievement(gd::string id) = win inline, imac 0x76eec0, m1 0x68248c {
+    int limitForAchievement(gd::string id) = win inline, imac 0x76eec0, m1 0x68248c, ios 0xeb63c {
         if (auto achievements = getAchievementsWithID(id.c_str())) {
             if (auto limits = static_cast<cocos2d::CCString*>(achievements->objectForKey("limits"))) return limits->intValue();
         }
@@ -7160,7 +7160,7 @@ class GameStatsManager : cocos2d::CCNode {
     TodoReturn getEventRewardKey(int);
     gd::string getGauntletRewardKey(int) = win 0x1e6e40, imac 0x77710, m1 0x6b024, ios 0x3129e8;
     gd::string getItemKey(int, int) = win 0x1de9b0;
-    int getItemUnlockState(int itemID, UnlockType unlockType) = win 0x1e2b30, m1 0x6a898, imac 0x77010;
+    int getItemUnlockState(int itemID, UnlockType unlockType) = win 0x1e2b30, m1 0x6a898, imac 0x77010, 0x336148;
     int getItemUnlockStateLite(int, UnlockType);
     gd::string getLevelKey(GJGameLevel* level) = win inline {
         return getLevelKey(level->m_levelID, level->m_levelType != GJLevelType::Local, level->m_dailyID > 0, level->m_gauntletLevel, level->m_dailyID > 200000);
@@ -7182,7 +7182,7 @@ class GameStatsManager : cocos2d::CCNode {
     TodoReturn getSecretOnlineRewardKey(int);
     TodoReturn getSpecialChestKeyForItem(int, UnlockType);
     TodoReturn getSpecialRewardDescription(gd::string, bool);
-    gd::string getSpecialUnlockDescription(int, UnlockType, bool) = win 0x1e6fb0, m1 0x6b4a4, imac 0x77bb0;
+    gd::string getSpecialUnlockDescription(int, UnlockType, bool) = win 0x1e6fb0, m1 0x6b4a4, imac 0x77bb0, ios 0x336794;
     TodoReturn getStarLevelKey(GJGameLevel*);
     int getStat(char const*) = win 0x1d21e0, imac 0x66610, m1 0x5aca0, ios 0x32bf54;
     TodoReturn getStatFromKey(StatKey);
