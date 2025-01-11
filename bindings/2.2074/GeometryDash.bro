@@ -2872,7 +2872,7 @@ class CreatorLayer : cocos2d::CCLayer, cocos2d::CCSceneTransitionDelegate, Dialo
     void onMapPacks(cocos2d::CCObject* sender) = win 0x9d4d0;
     void onMultiplayer(cocos2d::CCObject* sender) = win 0x9d610;
     void onMyLevels(cocos2d::CCObject* sender) = win 0x9cce0, m1 0x2300b4;
-    void onOnlineLevels(cocos2d::CCObject* sender) = win 0x9d450;
+    void onOnlineLevels(cocos2d::CCObject* sender) = win 0x9d450, m1 0x230078, imac 0x286be0;
     void onOnlyFullVersion(cocos2d::CCObject* sender);
     void onPaths(cocos2d::CCObject* sender) = win 0x9d360;
     void onSavedLevels(cocos2d::CCObject* sender) = win 0x9cef0, m1 0x22f988;
@@ -12786,8 +12786,8 @@ class LevelPage : cocos2d::CCLayer, DialogDelegate {
 class LevelSearchLayer : cocos2d::CCLayer, TextInputDelegate, FLAlertLayerProtocol, DemonFilterDelegate {
     // virtual ~LevelSearchLayer();
 
-    static LevelSearchLayer* create(int) = imac 0x610ff0;
-    static cocos2d::CCScene* scene(int) = win 0x2f75f0;
+    static LevelSearchLayer* create(int) = imac 0x610ff0, m1 0x53d2e0, ios 0x54d78;
+    static cocos2d::CCScene* scene(int) = win 0x2f75f0, m1 0x53d1e8, imac 0x610eb0;
 
     bool checkDiff(int);
     bool checkTime(int);
@@ -12802,7 +12802,7 @@ class LevelSearchLayer : cocos2d::CCLayer, TextInputDelegate, FLAlertLayerProtoc
     inline char const* getTimeKey(int time) {
         return cocos2d::CCString::createWithFormat("T%i", time)->getCString();
     }
-    bool init(int) = win 0x2f7740, imac 0x611100, m1 0x53d3b8;
+    bool init(int) = win 0x2f7740, imac 0x611100, m1 0x53d3b8, ios 0x54e44;
     void onBack(cocos2d::CCObject* sender) = win 0x2fd040;
     void onClearFreeSearch(cocos2d::CCObject* sender) = win 0x2fd000, imac 0x613e40, m1 0x540128;
     void onClose(cocos2d::CCObject* sender) = win inline {
@@ -12900,7 +12900,7 @@ class LevelSettingsLayer : FLAlertLayer, ColorSelectDelegate, SelectArtDelegate,
     static LevelSettingsLayer* create(LevelSettingsObject*, LevelEditorLayer*) = win 0x309ca0, imac 0x259580, m1 0x205e3c;
 
     void createToggleButton(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint) = win 0x30c7d0, imac 0x25c430;
-    bool init(LevelSettingsObject*, LevelEditorLayer*) = win 0x309e90, imac 0x259780, m1 0x205fa4;
+    bool init(LevelSettingsObject*, LevelEditorLayer*) = win 0x309e90, imac 0x259780, m1 0x205fa4, ios 0x17c954;
     void onBGArt(cocos2d::CCObject* sender) = win 0x30d060, imac 0x25c190;
     void onClose(cocos2d::CCObject* sender) = win 0x30cc50, imac 0x25c320, m1 0x20888c;
     void onCol(cocos2d::CCObject* sender);
