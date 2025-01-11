@@ -16588,7 +16588,7 @@ class SetGroupIDLayer : FLAlertLayer, TextInputDelegate {
     void callRemoveFromGroup(float);
     TodoReturn createTextInput(cocos2d::CCPoint, int, int, gd::string, float, int);
     TodoReturn determineStartValues();
-    bool init(GameObject* obj, cocos2d::CCArray* objs) = win 0x3e1260, imac 0x2fe5f0, m1 0x296704;
+    bool init(GameObject* obj, cocos2d::CCArray* objs) = win 0x3e1260, imac 0x2fe5f0, m1 0x296704, ios 0x3f110;
     void onAddGroup(cocos2d::CCObject* sender) = win 0x3e52b0;
     void onAddGroupParent(cocos2d::CCObject* sender) = win 0x3e5420;
     void onAnim(cocos2d::CCObject* sender);
