@@ -12001,7 +12001,7 @@ class LevelBrowserLayer : cocos2d::CCLayerColor, LevelManagerDelegate, FLAlertLa
     LevelBrowserLayer() {}
     ~LevelBrowserLayer() = win 0x2c07c0, imac 0x477f30;
 
-    static LevelBrowserLayer* create(GJSearchObject*) = win 0x2c09f0, imac 0x478170, m1 0x3e6590;
+    static LevelBrowserLayer* create(GJSearchObject*) = win 0x2c09f0, imac 0x478170, m1 0x3e6590, ios 0x40c184;
     static cocos2d::CCScene* scene(GJSearchObject* search) = win 0x2c09a0, imac 0x478130, m1 0x3e6544, ios 0x40c138; // ?
 
     TodoReturn createNewLevel(cocos2d::CCObject*);
