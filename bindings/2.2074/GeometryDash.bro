@@ -5004,7 +5004,7 @@ class FLAlertLayer : cocos2d::CCLayerColor {
 
     void incrementForcePrio() = ios 0x2abb08;
     bool init(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float, float) = win 0x51b60, imac 0x488360, m1 0x3f5800, ios 0x2ab0e4;
-    bool init(int) = win 0x51a50, imac 0x488de0;
+    bool init(int) = win 0x51a50, imac 0x488de0, ios 0x2aba58;
     void onBtn1(cocos2d::CCObject* sender) = win 0x52940;
     void onBtn2(cocos2d::CCObject* sender) = win 0x529a0;
 
