@@ -3347,7 +3347,7 @@ class CustomSongWidget : cocos2d::CCNode, MusicDownloadDelegate, FLAlertLayerPro
     void onDelete(cocos2d::CCObject* sender) = win 0xc9040, m1 0x531eb8;
     void onDownload(cocos2d::CCObject* sender) = win 0xc9cd0, imac 0x6043b0, m1 0x531c24, ios 0xfd9c0;
     void onGetSongInfo(cocos2d::CCObject* sender) = win 0xc9c40, imac 0x6047c0, m1 0x531ff4;
-    void onInfo(cocos2d::CCObject* sender) = win 0xc8d50, m1 0x532aec, imac 0x605410;
+    void onInfo(cocos2d::CCObject* sender) = win 0xc8d50, m1 0x532aec, imac 0x605410, ios 0xfe5e8;
     void onMore(cocos2d::CCObject* sender) = win 0xc9360, m1 0x532324;
     void onPlayback(cocos2d::CCObject* sender) = win 0xc9fd0, imac 0x604850, m1 0x532088;
     void onSelect(cocos2d::CCObject* sender) = win 0xc9f70, imac 0x604760, m1 0x531f98;
