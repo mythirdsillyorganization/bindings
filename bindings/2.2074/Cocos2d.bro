@@ -376,6 +376,18 @@ class cocos2d::CCAction {
     virtual void step(float) = m1 0x50fb60, imac 0x5dcc20, ios 0x264940;
 }
 
+class cocos2d::CCScene {
+    static cocos2d::CCScene* create() = imac 0x27eef0, m1 0x2288ec, ios 0x240218;
+
+    int getHighestChildZ() = imac 0x27efb0, m1 0x2289cc, ios 0x24028c;
+
+    // CCScene(cocos2d::CCScene const&);
+    // CCScene() = ios 0x2508a4;
+    ~CCScene() = imac 0x27ee70, m1 0x22887c, ios 0x23ac80; // ios: idfk i just guessed
+
+    virtual bool init() = m1 0x228894, imac 0x27eea0, ios 0x2401c0;
+}
+
 [[link(win, android)]]
 class cocos2d::CCSet : cocos2d::CCObject {
     static cocos2d::CCSet* create();
