@@ -3131,8 +3131,8 @@ class cocos2d::extension::CCScale9Sprite : cocos2d::CCNodeRGBA {
     }
     static cocos2d::extension::CCScale9Sprite* create(char const*, cocos2d::CCRect) = imac 0x3e3810, m1 0x365afc;
 
-    CCScale9Sprite() = m1 0x3642fc, imac 0x3e1e50, 0x2151f4;
-    ~CCScale9Sprite() = m1 0x3643b0, imac 0x3e1f40, 0x2152a4;
+    CCScale9Sprite() = m1 0x3642fc, imac 0x3e1e50, ios 0x2151f4;
+    ~CCScale9Sprite() = m1 0x3643b0, imac 0x3e1f40, ios 0x2152a4;
 
     virtual bool init() = m1 0x364478, imac 0x3e2060, ios 0x21536c;
     virtual void setContentSize(const cocos2d::CCSize& size) = m1 0x365484, imac 0x3e3190, ios 0x216264;
