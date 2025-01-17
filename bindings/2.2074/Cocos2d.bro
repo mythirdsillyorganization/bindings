@@ -377,33 +377,20 @@ class cocos2d::CCAction {
 }
 
 [[link(win, android)]]
-class cocos2d::CCScene {
-    static cocos2d::CCScene* create() = imac 0x27eef0, m1 0x2288ec, ios 0x240218;
-
-    int getHighestChildZ() = imac 0x27efb0, m1 0x2289cc, ios 0x24028c;
-
-    // CCScene(cocos2d::CCScene const&);
-    // CCScene() = ios 0x2508a4;
-    ~CCScene() = imac 0x27ee70, m1 0x22887c, ios 0x23ac80; // ios: idfk i just guessed
-
-    virtual bool init() = m1 0x228894, imac 0x27eea0, ios 0x2401c0;
-}
-
-[[link(win, android)]]
-class cocos2d::CCSet {
+class cocos2d::CCSet : cocos2d::CCObject {
     static cocos2d::CCSet* create();
 
-    //CCSet(cocos2d::CCSet const&) = imac 0x7bf970, m1 0x6c576c;
-    CCSet();
-    ~CCSet() = imac 0x79e050;
+    //CCSet(cocos2d::CCSet const&) = imac 0x79df40, m1 0x6b0448;
+    CCSet() = imac 0x79def0, m1 0x6b03e8;
+    ~CCSet() = imac 0x79e050, m1 0x6b0560;
     void addObject(cocos2d::CCObject*) = imac 0x79e300, m1 0x6b07f0;
     cocos2d::CCObject* anyObject() = imac 0x79e4d0, m1 0x6b09ec;
-    cocos2d::CCSetIterator begin();
-    bool containsObject(cocos2d::CCObject*) = imac 0x79e460, m1 0x6b0984;
+    cocos2d::CCSetIterator begin() = imac 0x79e4b0, m1 0x6b09d4, ios 0x1afa04;
+    bool containsObject(cocos2d::CCObject*) = imac 0x79e460, m1 0x6b0984, ios 0x1af9b4;
     cocos2d::CCSet* copy();
-    int count();
-    cocos2d::CCSetIterator end() = imac 0x79e4c0;
-    cocos2d::CCSet* mutableCopy();
+    int count() = imac 0x79e2f0, m1 0x6b07e4;
+    cocos2d::CCSetIterator end() = imac 0x79e4c0, m1 0x6b09e0, ios 0x1afa10;
+    cocos2d::CCSet* mutableCopy() = imac 0x79e2b0, m1 0x6b079c;
     void removeAllObjects();
     void removeObject(cocos2d::CCObject*) = imac 0x79e3b0;
 
