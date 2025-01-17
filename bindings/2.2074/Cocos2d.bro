@@ -35,7 +35,7 @@ class cocos2d::CCEaseIn {
 
 [[link(win, android)]]
 class cocos2d::CCEaseOut {
-    static cocos2d::CCEaseOut* create(cocos2d::CCActionInterval*, float) = m1 0x45e320;
+    static cocos2d::CCEaseOut* create(cocos2d::CCActionInterval*, float) = m1 0x45e320, ios 0x26b288;
 
     // CCEaseOut(cocos2d::CCEaseOut const&);
     // CCEaseOut();
